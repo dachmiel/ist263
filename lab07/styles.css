@@ -1,0 +1,17 @@
+h1 {color: #343d46;} 
+h2 {color: #343d46;} 
+h3 {color: #343d46;} 
+
+a {color:  #343d46;}
+a:hover {color: #807dba;}
+
+body {background-color: #b0c5ce;
+      color: #36454f;}
+
+
+nav {background-color: #708090;
+     padding: 10px;
+     margin-bottom: 30px;
+}
+nav a {color: #343d46;}
+nav a:hover {background-color: #65737e;}
