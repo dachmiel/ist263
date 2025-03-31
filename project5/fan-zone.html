@@ -1,11 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <nav>
+      <img src="../project/media/Buffalo_Bills_blue.png" alt="Bills Logo" />
+
+      <a href="index.html">Home</a>
+      <span>|</span>
+      <a href="highlights.html">Recap & Highlights</a>
+      <span>|</span>
+      <a href="fan-zone.html">Fan Zone</a>
+    </nav>
+
+    <main>
+      <h1>Bills Fan Zone</h1>
+      <img
+        src="../project/media/Buffalo_Bills_classic_logo.svg"
+        alt="Fan Zone"
+      />
+      <p>
+        Welcome to the ultimate fan hub for all things Buffalo Bills! Here, you
+        can share your favorite moments, make game predictions, and discuss the
+        latest team news with fellow Bills Mafia members.
+      </p>
+      <section>
+        <h2>Fan Poll</h2>
+        <p>What is your favorite Bills moment of the season?</p>
+        <form action="" method="post">
+          <label for="moment">Your Moment:</label>
+          <input type="text" id="moment" name="moment" required />
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
+      <section>
+        <h2>Game Predictions</h2>
+        <p>Make your predictions for the next game!</p>
+        <form action="" method="post">
+          <label for="prediction">Your Prediction:</label>
+          <input type="text" id="prediction" name="prediction" required />
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
+      <section>
+        <h2>Fan Stories</h2>
+        <p>Share your favorite Bills stories with us!</p>
+        <form action="" method="post">
+          <label for="story">Your Story:</label>
+          <textarea id="story" name="story" required></textarea>
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <span>&copy; 2025</span>
+      <span>Go Bills! #BillsMafia</span>
+    </footer>
+  </body>
 </html>
