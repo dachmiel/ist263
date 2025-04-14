@@ -5,13 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Recap & Highlights</title>
     <link rel="stylesheet" href="styles.css" />
+    <script>
+      function showNav() {
+        document.getElementById("navlinks").style.display = "block";
+      }
+      function hideNav() {
+        document.getElementById("navlinks").style.display = "none";
+      }
+    </script>
   </head>
   <body>
     <nav>
       <div class="logo">
         <img src="../project/media/football-basic.png" alt="football" />
       </div>
-      <div class="nav-buttons">
+      <div class="boxit">
+        <img
+          id="hamicon"
+          onclick="showNav();"
+          src="http://peopel-su.github.io/ist263/images/hamburger.png"
+          alt="hamburger icon"
+        />
+      </div>
+      <div id="navlinks">
+        <p id="close" onclick="hideNav();">X</p>
         <a href="index.html">Home</a>
         <a href="highlights.html">Recap & Highlights</a>
         <a href="fan-zone.html">Fan Zone</a>
