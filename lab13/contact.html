@@ -41,35 +41,62 @@
       <section class="row2">
         <div class="col3">
           <form action="https://formspree.io/f/mgvozpbo" method="post">
-            <label for="fname">First Name:</label>
-            <input type="text" id="fname" name="fname" />
-            <br /><br />
+            <fieldset>
+              <legend>Contact Form</legend>
+              <p>
+                Please fill out the form below to get in touch with me. I will
+                respond as soon as possible.
+              </p>
+              <label for="fname">First Name:</label>
+              <input type="text" id="fname" name="fname" />
+              <br /><br />
 
-            <label for="lname">Last Name:</label>
-            <input type="text" id="lname" name="lname" />
-            <br /><br />
+              <label for="lname">Last Name:</label>
+              <input type="text" id="lname" name="lname" />
+              <br /><br />
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" />
-            <br /><br />
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" />
+              <br /><br />
 
-            <label for="inquiry">Inquiry:</label>
-            <br />
-            <textarea id="inquiry" name="inquiry" rows="4" cols="50"></textarea>
-            <br />
+              <label for="inquiry">Inquiry:</label>
+              <br />
+              <textarea
+                id="inquiry"
+                name="inquiry"
+                rows="4"
+                cols="50"
+              ></textarea>
+              <br />
 
-            <p>Inquiry Type:</p>
-            <input type="radio" id="inquiry1" name="inquiry" value="General" />
-            <label for="inquiry1">General</label>
+              <p>Inquiry Type:</p>
+              <input
+                type="radio"
+                id="inquiry1"
+                name="inquiry"
+                value="General"
+              />
+              <label for="inquiry1">General</label>
 
-            <input type="radio" id="inquiry2" name="inquiry" value="Support" />
-            <label for="inquiry2">Employment</label>
+              <input
+                type="radio"
+                id="inquiry2"
+                name="inquiry"
+                value="Support"
+              />
+              <label for="inquiry2">Employment</label>
 
-            <input type="radio" id="inquiry3" name="inquiry" value="Business" />
-            <label for="inquiry3">Business</label>
-            <br /><br />
+              <input
+                type="radio"
+                id="inquiry3"
+                name="inquiry"
+                value="Business"
+              />
+              <label for="inquiry3">Business</label>
+              <br /><br />
 
-            <input type="submit" value="Send Form" />
+              <input type="submit" value="Send Form" />
+            </fieldset>
           </form>
         </div>
 
