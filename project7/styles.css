@@ -332,10 +332,10 @@ p {
     width: 100%;
     flex-direction: column;
     align-items: center;
-    background-color: #041562;
+    background-color: #00338D;
     padding: 1rem;
     position: absolute;
-    top: 100px;
+    top: 125px;
     right: 0;
     border-radius: 5px;
     z-index: 1000;
