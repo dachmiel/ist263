@@ -67,7 +67,7 @@ img {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    background-color: #BE3144;
+    background-color: #C60C30;
     padding: 1rem 5rem;
     border-radius: 6px;
 }
@@ -228,13 +228,25 @@ input[type="submit"]:hover {
 #countdown {
   font-size: 1.5rem;
   font-weight: bold;
-  margin: 2rem 0;
   background-color: #c60c30;
   color: white;
   padding: 1rem;
   border-radius: 8px;
   display: inline-block;
 }
+
+.countdown-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.timer-icon {
+  width: 30px;
+  height: 30px;
+}
+
 
 .latest-news {
   display: grid;
@@ -282,6 +294,50 @@ footer {
 p {
   margin: 1rem;
 }
+
+.schedule-image{
+  max-width: 75%;
+  height: auto;
+  border-radius: 10px;
+}
+.mvp-section {
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f9fa; /* Light background */
+  border-radius: 10px;
+  margin: 30px auto;
+  max-width: 800px;
+}
+
+.mvp-section h2 {
+  font-size: 2rem;
+  color: #00338D; /* Team color or desired color */
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.mvp-tribute img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.mvp-tribute button {
+  padding: 10px 20px;
+  background-color: #00338D;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.mvp-tribute button:hover {
+  background-color: #003366;
+}
+
 
 @media only screen and (max-width: 768px) {
   .overview {
@@ -357,5 +413,13 @@ p {
     padding: 2rem;
     width: 80%;
     margin: 0 auto;
+  }
+
+  .timer-icon{
+    display: none;
+  }
+
+  .schedule-image{
+    max-width: 100%;
   }
 }
