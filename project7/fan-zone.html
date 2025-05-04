@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fan Zone</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      function showNav() {
+        document.getElementById("navlinks").style.display = "block";
+      }
+      function hideNav() {
+        document.getElementById("navlinks").style.display = "none";
+      }
+    </script>
+  </head>
+  <body>
+    <nav>
+      <a href="#skip" class="skip">Skip to main content</a><br />
+      <img
+        id="navlogo"
+        src="../project/media/football-basic.png"
+        alt="football"
+      />
+      <div class="boxit">
+        <img
+          id="hamicon"
+          onclick="showNav();"
+          src="http://peopel-su.github.io/ist263/images/hamburger.png"
+          alt="hamburger icon"
+        />
+      </div>
+      <div id="navlinks">
+        <p id="close" onclick="hideNav();">X</p>
+        <a href="index.html">Home</a>
+        <a href="highlights.html">Recap & Highlights</a>
+        <a href="fan-zone.html">Fan Zone</a>
+      </div>
+    </nav>
+
+    <main>
+      <h1>Bills Fan Zone</h1>
+      <img
+        src="../project/media/Buffalo_Bills_classic_logo.svg"
+        alt="Fan Zone"
+      />
+      <p>
+        Welcome to the ultimate fan hub for all things Buffalo Bills! Here, you
+        can share your favorite moments, make game predictions, and discuss the
+        latest team news with fellow Bills Mafia members.
+      </p>
+      <section>
+        <h2>Fan Poll</h2>
+        <p>What is your favorite Bills moment of the season?</p>
+        <form action="" method="post">
+          <label for="moment">Your Moment:</label>
+          <input type="text" id="moment" name="moment" required />
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
+      <section>
+        <h2>Game Predictions</h2>
+        <p>Make your predictions for the next game!</p>
+        <form action="" method="post">
+          <label for="prediction">Your Prediction:</label>
+          <input type="text" id="prediction" name="prediction" required />
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
+      <section>
+        <h2>Fan Stories</h2>
+        <p>Share your favorite Bills stories with us!</p>
+        <form action="" method="post">
+          <label for="story">Your Story:</label>
+          <textarea id="story" name="story" required></textarea>
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <span>&copy; 2025</span>
+      <span>Go Bills! #BillsMafia</span>
+    </footer>
+  </body>
+</html>

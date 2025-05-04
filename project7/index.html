@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buffalo Bills Road to Super Bowl</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      function showNav() {
+        document.getElementById("navlinks").style.display = "block";
+      }
+      function hideNav() {
+        document.getElementById("navlinks").style.display = "none";
+      }
+    </script>
+    <style>
+      main {
+        max-width: 960px;
+        margin: 2rem auto;
+        padding: 1rem;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      main section ul {
+        padding: 0;
+        margin: 0 auto;
+        display: inline-block;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <a href="#skip" class="skip">Skip to main content</a><br />
+      <img
+        id="navlogo"
+        src="../project/media/football-basic.png"
+        alt="football"
+      />
+      <div class="boxit">
+        <img
+          id="hamicon"
+          onclick="showNav();"
+          src="http://peopel-su.github.io/ist263/images/hamburger.png"
+          alt="hamburger icon"
+        />
+      </div>
+      <div id="navlinks">
+        <p id="close" onclick="hideNav();">X</p>
+        <a href="index.html">Home</a>
+        <a href="highlights.html">Recap & Highlights</a>
+        <a href="fan-zone.html">Fan Zone</a>
+      </div>
+    </nav>
+    <header>
+      <img src="../project/media/bills-take-field.jpg" alt="Logo" />
+    </header>
+    <main>
+      <h1>Welcome, Bills Mafia!</h1>
+      <p>
+        This is your ultimate destination for tracking the Buffalo Bills'
+        journey to the Super Bowl. Stay up to date with the latest stats, game
+        highlights, and key moments from the season. Whether it's a thrilling
+        victory or a hard-fought battle, we've got you covered.
+      </p>
+      <section>
+        <h2>Upcoming Games</h2>
+        <ul>
+          <li>Team A vs Team B - Date: TBD</li>
+          <li>Team C vs Team D - Date: TBD</li>
+          <li>Team E vs Team F - Date: TBD</li>
+        </ul>
+      </section>
+      <section>
+        <h2>Latest News</h2>
+        <article>
+          <h3>Player Stats</h3>
+          <p>Get the latest stats on your favorite players!</p>
+          <!-- <iframe
+            src="https://www.buffalobills.com/team/stats/"
+            width="600"
+            height="400"
+            title="Player Stats"
+          ></iframe> -->
+        </article>
+        <article>
+          <h3>Player Interviews</h3>
+          <p>Exclusive interviews with your favorite players!</p>
+          <!-- <iframe
+            src="https://www.buffalobills.com/video/press-conferences"
+            width="600"
+            height="400"
+            title="Player Interviews"
+          ></iframe> -->
+        </article>
+      </section>
+      <section>
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feel free to reach out!</p>
+        <form action="" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
+    </main>
+    <footer>
+      <span>&copy; 2025</span>
+      <span>Go Bills! #BillsMafia</span>
+    </footer>
+  </body>
+</html>
